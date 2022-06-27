@@ -1,6 +1,5 @@
 .App {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -9,13 +8,14 @@
 }
 
 .window-messages {
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  display: flex;
+
+  overflow: auto;
 
   flex-direction: column;
   
-  margin-top: 50px;
+  margin-top: 1rem;
 
   border-radius: 12px;
 
@@ -29,6 +29,9 @@
   background-color: #407bff;
   padding: 1rem;
 
+  width: fit-content;
+
+
   margin-top: 1rem;
 
   border-radius: 0.8rem;
@@ -38,6 +41,13 @@
 .received-message {
   background-color: #170E5F;
   padding: 1rem;
+
+  margin-left: 1rem;
+
+  display: flex;
+  align-self: flex-start;
+
+  width: fit-content;
 
   margin-top: 1rem;
 
@@ -49,10 +59,97 @@
   background-color: #407bff;
   padding: 1rem;
 
+
+  margin-right: 1rem;
+
+  display: flex;
+  align-self: flex-end;
+
+  width: fit-content;
+
+
   margin-top: 1rem;
 
   border-radius: 0.8rem 0.8rem 0 0.8rem;
   color: white;
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background-color: #407bff;
+  border-radius: 1rem;
+  
+  color: white;
+}
+
+.chat-text {
+  margin-top: 1rem;
+
+
+  padding: 1rem;
+
+  outline: none;
+
+  border: none;
+
+  resize: none;
+  width: 700px;
+}
+
+.textarea-container {
+  background-color: white;
+
+
+  padding: 1rem;
+  padding-top: 0;
+
+  display: flex;
+  border-radius: 0.8rem;
+
+  margin-top: 0.5rem;
+
+
+
+  align-items: center;
+  justify-content: center;
+}
+
+.join-group-container {
+  margin-top: 0.5rem;
+
+  border-radius: 0.3rem;
+
+  padding: 1rem;
+  background-color: white;
+
+  display: flex;
+}
+
+.join-group-container > input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+} 
+
+.join-group-container > button  {
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
+
+  margin-left: 1rem;
+
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+
+  background-color: #407bff;
+
 }
 
 .App-logo {
